@@ -247,8 +247,10 @@ def rgb565_convert(src_filename, dest_filename, dest_size=None):
             r = pixel[0] >> 3
             g = pixel[1] >> 2
             b = pixel[2] >> 3
-            rgb = (r << 11) | (g << 5) | b
-            dest_file.write(struct.pack('H', rgb))
+            # rgb = (r << 11) | (g << 5) | b
+            # dest_file.write(struct.pack('H', rgb))
+            rgb = (pixel[2] << 24) | (pixel[1] << 16) | (pixel[0] << 8) | 255
+            dest_file.write(struct.pack('>I', rgb))
 
     dest_file.close()
 
