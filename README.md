@@ -1,11 +1,11 @@
-自用，PDD上一款MD的游戏机内使用zmd，但是图片格式用的是BGRA，因此修改图片格式。
-使用需要先准备SF2000的目录结构，在   https://pan.baidu.com/s/1t_mOfEhxQTRWDfgtkibaTQ?pwd=1234
-之后把经过zip压缩的 md 或者 bin 格式的rom放到 MD目录下
-然后去网上搜索游戏的图片一张，文件名要和zip文件一样。
-然后运行：
+自用，PDD上一款MD的游戏机内使用zmd，但是图片格式用的是BGRA，因此修改了图片格式。  
+使用需要先准备SF2000的目录结构，在   https://pan.baidu.com/s/1t_mOfEhxQTRWDfgtkibaTQ?pwd=1234  
+之后把经过zip压缩的 md 或者 bin 格式的rom放到 MD目录下  
+然后去网上搜索游戏的图片一张，文件名要和zip文件一样，放在一起。  
+然后运行：  
 ```python3 frogtool.py /home/user/temp/roms MD```
-只需要注意路径换成sf2000的目录
-运行后，软件会删除zip和图片文件，生成zmd文件，要注意备份
+只需要注意路径换成sf2000的目录  
+运行后，软件会删除zip和图片文件，生成zmd文件，要注意备份  
 
 FROGTOOL v0.2.1
 ===============
